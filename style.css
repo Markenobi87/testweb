@@ -1,0 +1,428 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins:wght@200;300;400;600;700&display=swap');  
+
+  *{
+  text-decoration: none;
+  list-style: none;
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family:'Poppins', sans-serif;
+}
+/* TRAIL MOUSE */
+.trail-container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  pointer-events: none; /* Evita que el contenedor sea clickeable */
+  z-index: 9999; /* Asegura que el contenedor esté por encima de otros elementos */
+}
+
+.trail {
+  box-shadow: 0 0 10px rgb(218, 248, 249);
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background-color: rgb(255, 255, 253); /* Puedes cambiar el color aquí */
+  mix-blend-mode: difference; /* Agrega un efecto de mezcla para que se vea más brillante */
+  opacity: 0; /* Establece la opacidad inicial en 0 para que esté oculto */
+  transition: opacity 0.3s ease; 
+}
+
+
+.logo-lobo{
+  width: 40px;
+}
+
+header{
+
+  background-color:#041b34;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: .5rem 2rem;
+}
+.logo{
+  padding-left: 8rem;
+  color: #fff;
+  font-size: 23px;
+}
+
+
+.menu{
+  
+  border-radius: 50%;
+}
+ 
+.nav-menu ul{
+  
+  display: flex;
+  align-items: center;
+}
+.nav-menu li{
+  margin: 1rem;
+}
+.nav-menu a{
+  color: #fff;
+}
+
+a:hover{
+ text-shadow: 0 0 20px #fff;
+ font-weight: 700;
+ color: white;
+
+}
+
+.menu-icon img{
+  width: 25px;
+
+}
+.menu-icon, #check{
+  display: none;
+}
+
+/* MEDIA QUERY MENU HAMBURGUESA */
+@media (max-width:768px){
+  .checkbtn{
+      display: block;
+  }
+  .menu-icon{
+      display: block;
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      cursor: pointer;
+  }
+  .nav-menu ul{
+    
+      display: block;
+      position: fixed;
+      top:50px;
+      left:-100%;
+      background: #0c1222b1;
+      width: 100%;
+      height: 26vh;
+      right: 0;
+  }
+  .nav-menu ul li{
+    padding: 0.8rem;
+      display: flex;
+      justify-content: center;
+      margin: 0;
+  }
+
+  #check:checked ~ ul{
+      left: 0;
+      transition: all .25s;
+  }
+}
+
+section{
+min-height: 100vh;
+padding: 10rem 9% 2rem;}
+
+/* STARTBACK */
+ .background-container{
+
+  overflow: hidden;
+  background-image: url(./src/fondoweb.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+
+} 
+
+/* START BUTTON */
+  
+ .start-box{ 
+ 
+  display:flex ;
+  justify-content: center;
+  padding-top: 10rem;
+ 
+} 
+
+ .start-btn{
+  font-family:'Poppins', sans-serif;
+  text-decoration: none;
+  text-shadow: 2px 2px 8px #ffffff;
+  padding: 0.8rem 2.5rem;
+  border: none;
+  font-size: 1.1rem;
+  color: #fff;
+  border-radius: 1rem;
+  letter-spacing: 0.3rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  transition: 0.5s;
+  transition-property: box-shadow;
+  background: rgba(0, 140, 255, 0.248);
+  box-shadow: 0 0 25px rgb(108, 177, 233);
+  
+} 
+.start-btn:hover{
+  font-size:1.2rem;
+  box-shadow: 0 0 5px rgb(0,140,255),
+              0 0 25px rgb(0,140,255),
+              0 0 50px rgb(0,140,255),
+              0 0 100px rgb(0,140,255);
+}
+ /* SECTION TEST */
+
+/* Estilos generales del formulario */
+#personalityTest {
+  max-width: 600px;
+  margin: 0 auto; /* Centrar el formulario horizontalmente */
+  padding: 20px;
+  background-color:#1036499c;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.test{
+  background-image: url(./src/forest.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  
+  
+}
+fieldset {
+  border-radius: 10px;
+  border: solid 1px #31768F;
+  padding: 20px;
+  color: #ffffff;
+}
+
+legend {
+  font-weight: bold;
+  padding: 5px 10px;
+  border-radius: 5px;
+  background-color: #333;
+  color: #fff;
+}
+
+/* Estilos de las preguntas */
+h2 {
+  font-family: 'Playfair Display', serif;
+  margin-top: 0;
+  color: rgb(213, 209, 161);
+  text-shadow:0 0 10px #b5d4f0;
+}
+
+p {
+  font-weight: 200;
+  margin-bottom: 5px;
+  color: #fefefe;
+  background-color: rgba(3, 41, 72, 0.5);
+  border-radius: 50px;
+}
+
+/* Estilos de las opciones de radio */
+input[type="radio"] {
+  margin-right: 5px;
+}
+
+.radio{
+  background-color: brown;
+}
+
+.caja-botones{
+  display: flex;
+}
+
+
+
+/* Estilos del botón */
+button {
+  display: block;
+  margin: 20px auto 0; /* Centrar el botón horizontalmente */
+  padding: 10px 20px;
+  background:transparent;
+  color: #fff;
+  border: 1px solid rgb(74, 205, 234);
+  border-radius: 5px;
+  box-shadow:0 0 20px #b5d4f0;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #3a8eba;
+  box-shadow: 0 0 5px rgb(0,140,255),
+              0 0 25px rgb(0,140,255),
+              0 0 50px rgb(0,140,255),
+              0 0 100px rgb(0,140,255);
+  
+}
+
+/* TIPOS SECTION */
+
+body{
+  background-image: url(./src/forest.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  
+}
+.tipos{
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding:250px 20px;
+}
+
+/* Estilos para cada caja que contiene la descripción y la imagen */
+.box-ab {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  max-width: 800px;
+  margin-bottom: 20px;
+  border: none;
+  padding: 10px;
+  background-color: #31768f6c;
+  border-radius:10px ;
+ 
+}
+
+/* Estilos para la imagen dentro de la caja */
+.box-ab img {
+  float: right;
+  width: 200px;
+  margin-left: 20px;
+}
+
+/* Estilos para el texto de la descripción dentro de la caja */
+.box-ab h4 {
+  padding: 48px;
+  text-align: justify;
+  color: #fff;
+  font-weight: 200; 
+   font-size: 20px;
+ 
+  margin: 0;
+}
+
+
+/* Para pantallas pequeñas, ajusta el ancho de la imagen y el tamaño del título */
+@media screen and (max-width: 768px) {
+  .box-ab img {
+    width: 150px;
+  }
+  .box-ab h4 {
+    font-size: 18px;
+  }
+}
+
+/* Para pantallas muy pequeñas, coloca la imagen debajo del texto */
+@media screen and (max-width: 480px) {
+  .box-ab {
+    flex-direction: column;
+  }
+  .box-ab img {
+    float: none;
+    width: 100%;
+    margin-left: 0;
+    margin-bottom: 10px;
+  }
+}
+
+/* Estilos para el botón de desplazamiento */
+.scroll-to-top-btn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 100px;
+  background:transparent;
+  border: 1px solid rgb(105, 222, 243);
+  box-shadow: 0 0 10px rgb(215, 241, 251);
+  color: #ffffff;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  z-index: 999;
+}
+
+.scroll-to-top-btn i {
+  font-size: 20px;
+}
+
+.scroll-to-top-btn:hover{
+  text-shadow:0 0 20px white;
+  box-shadow: 0 0 20px rgb(215, 241, 251);
+  width: 53px;
+  height: 53px;
+ 
+}
+
+
+
+
+/* SECTION CONTACTO */
+
+.container-form{
+  max-width: 600px;
+  margin: 0 auto; /* Centrar el formulario horizontalmente */
+  padding: 100px;
+  background-color:#0C1517;
+  box-shadow: 0 15px 25px rgba(0,0,0,.6);
+  border-radius: 10px;
+  
+}
+
+.container-form .box{
+  position: relative;
+}
+
+.container-form .box input{
+  width: 100%;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #fff;
+  margin-bottom: 30px;
+  border: none;
+  border-bottom: 1px solid #fff;
+  outline: none;
+  background: transparent;
+}
+
+
+.container-form .box label{
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #fff;
+  pointer-events: none;
+  transition: .5s;
+}
+.container-form .box input:focus ~ label,
+.container-form .box input:valid ~ label{
+  top: -20px;
+  left: 0;
+  color: #bdb8b8;
+  font-size: 12px;
+}
+
+.boton-form{
+ 
+  display: flex;
+  justify-content: center;
+  border: none;
+  width: 130px;
+}

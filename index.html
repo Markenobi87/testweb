@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="/src/lobo.png" />
+    <script src="https://kit.fontawesome.com/e39cc26d40.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+    <script type="text/javascript">
+        emailjs.init('D2OhWUzNZeWYi6WkP')
+    </script>
+    <title>Document</title>
+
+
+
+
+</head>
+
+<body>
+    <div class="trail-container"></div>
+
+
+
+    <header class="header">
+        <div class="logo-header">
+            <a class="logo" href="#">MagiC</a>
+        </div>
+        <div class="nav-menu">
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="menu-icon"><img src="src/bars-solid.svg" alt=""></i>
+            </label>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#test">Test</a></li>
+                <li><a href="#tipos">Tipos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </div>
+    </header>
+
+
+
+
+
+
+
+    <div class="background-container">
+
+        <section class="home" id="home">
+            <div class="start-box">
+                <a href="#test" class="start-btn">Start</a>
+            </div>
+
+
+
+
+
+    </div>
+
+    </section>
+
+    </div>
+
+
+
+    <!-- TEST SECTION-->
+
+    <section class="test" id="test">
+        <form id="personalityTest">
+            <div class="page" id="page1">
+                <!-- Pregunta 1 -->
+                <fieldset>
+                    <h2>Pregunta 1:</h2>
+                    <p>¿Qué valor o cualidad es más importante para ti?</p>
+                    <input type="radio" name="pregunta1" value="3" required> El coraje, para enfrentar a los
+                    desafios que vengan<br>
+                    <input type="radio" name="pregunta1" value="2"> Creatividad,para imaginar y crear<br>
+                    <input type="radio" name="pregunta1" value="1">Capacidad de adaptarse, para encontrar
+                    armonía siempre<br>
+                </fieldset>
+
+                <!-- Pregunta 2 -->
+                <fieldset>
+                    <h2>Pregunta 2:</h2>
+                    <p>¿Cuál es tu enfoque principal en la toma de decisiones?</p>
+                    <input type="radio" name="pregunta2" value="3" required> Lógico, todo tiene un sentido<br>
+                    <input type="radio" name="pregunta2" value="1"> Emocional, nada mejor que confiar en los
+                    sentidos<br>
+                    <input type="radio" name="pregunta2" value="2"> Ambas, la combinación perfecta<br>
+                </fieldset>
+
+                <!-- Pregunta 3 -->
+                <fieldset>
+                    <h2>Pregunta 3:</h2>
+                    <p>¿Si tuvieras que elegir un poder cual serÍa?</p>
+                    <input type="radio" name="pregunta3" value="2" required> Invisibilidad<br>
+                    <input type="radio" name="pregunta3" value="1"> Poder controlar las emociones de los
+                    demás<br>
+                    <input type="radio" name="pregunta3" value="3">Tener super fuerza<br>
+                </fieldset>
+
+                <!-- Pregunta 4 -->
+                <fieldset>
+                    <h2>Pregunta 4:</h2>
+                    <p>¿Si tuvieras que elegir una criatura mágica, cual sería?</p>
+                    <input type="radio" name="pregunta4" value="1" required> Un elfo con supervisión<br>
+                    <input type="radio" name="pregunta4" value="3">Un Hada con poderes<br>
+                    <input type="radio" name="pregunta4" value="3">Un enano con superfuerza<br>
+                </fieldset>
+
+                <!-- Pregunta 5 -->
+                <fieldset>
+                    <h2>Pregunta 5:</h2>
+                    <p>¿Cuál de las siguientes características te describe mejor?</p>
+                    <input type="radio" name="pregunta5" value="3" required> Audaz y astuto<br>
+                    <input type="radio" name="pregunta5" value="2"> Espiritu libre y apasionado<br>
+                    <input type="radio" name="pregunta5" value="1"> Observador equilibrado<br>
+                </fieldset>
+
+                <button type="button" onclick="showPage(2)">Siguiente</button>
+
+            </div>
+
+
+            <div class="page" id="page2" style="display: none;">
+                <!-- Pregunta 6 -->
+                <fieldset>
+                    <h2>Pregunta 6:</h2>
+                    <p>¿Cuál de estas cualidades te identifica más?</p>
+                    <input type="radio" name="pregunta6" value="1" required> Elegante e independiente<br>
+                    <input type="radio" name="pregunta6" value="2"> Enigmatico y espiritual<br>
+                    <input type="radio" name="pregunta6" value="3">Protector y cariñoso<br>
+                </fieldset>
+
+                <!-- Pregunta 7 -->
+                <fieldset>
+                    <h2>Pregunta 7:</h2>
+                    <p>¿Cómo reaccionas cuando alguien te pide ayuda o consejo?</p>
+                    <input type="radio" name="pregunta7" value="1" required> Ofrezo consejos reflexivos y
+                    profundos<br>
+                    <input type="radio" name="pregunta7" value="2">Muestro empatia y doy consejos basados en
+                    mi experiencia<br>
+                    <input type="radio" name="pregunta7" value="3">Soy sincero con lo que pienso, guste o no.<br>
+                </fieldset>
+
+                <!-- Pregunta 8 -->
+                <fieldset>
+                    <h2>Pregunta 8:</h2>
+                    <p>¿Si tuvieras que elegir para comer?</p>
+                    <input type="radio" name="pregunta8" value="3" required>Carne cruda<br>
+                    <input type="radio" name="pregunta8" value="1"> insectos<br>
+                    <input type="radio" name="pregunta8" value="2"> plantas<br>
+                </fieldset>
+
+                <!-- Pregunta 9 -->
+                <fieldset>
+                    <h2>Pregunta 9:</h2>
+                    <p>¿Si pudieras elegir un lugar donde vivir el resto de tu vida, ¿cuál sería??</p>
+                    <input type="radio" name="pregunta9" value="1" required> Un bosque tranquilo y frondoso,
+                    lleno de vida<br>
+                    <input type="radio" name="pregunta9" value="2"> En una pradera extensa<br>
+                    <input type="radio" name="pregunta9" value="3"> En la playa con vistas al mar.<br>
+                </fieldset>
+
+                <!-- Pregunta 10 -->
+                <fieldset>
+                    <h2>Pregunta 10:</h2>
+                    <p>¿Cuál de estas actividades te resulta más atractiva para pasar tu tiempo libre?</p>
+                    <input type="radio" name="pregunta10" value="3" required> Leer libros, sobre todo de
+                    fantasia<br>
+                    <input type="radio" name="pregunta10" value="2">Disfrutar de caminas, todo lo que sea
+                    moverse y estar activo<br>
+                    <input type="radio" name="pregunta10" value="1"> Explorar y fotografiar o pintar lo que
+                    descubro<br>
+                </fieldset>
+
+
+                <br>
+                <div class="caja-botones">
+                    <button type="button" onclick="volverAtras()">Volver Atrás</button>
+                    <button type="button" onclick="redirigirAResultados()">Obtener resultados</button>
+
+                </div>
+            </div>
+
+        </form>
+
+
+
+
+    </section>
+
+
+
+    <section class="tipos" id="tipos">
+
+        <div class="box-ab">
+            <h4>
+                Ciervo, irradia elegancia y gracia en su presencia. Su mente astuta, corazón compasivo y carisma natural
+                lo hacen encantador y respetado por los demás. Enfrenta los desafíos con valentía y muestra una
+                resiliencia admirable ante la adversidad"
+            </h4>
+            <img src="./src/ciervo.png" alt="">
+
+        </div>
+
+        <div class="box-ab">
+            <h4>
+                Nutria, se muestra simpático y divertido, disfrutando del tiempo de calidad junto a su círculo cercano.
+                Pero
+                detrás de su apariencia amigable, se esconden mentes muy inteligentes. Con serenidad y sabiduría,
+                resuelven
+                conflictos con éxito y continúan disfrutando de la vida. Su habilidad para mantener la armonía y salir
+                victoriosos los hace ser seres excepcionales y admirables.
+            </h4>
+            <img src="./src/nutria.png" alt="">
+
+        </div>
+        <div class="box-ab">
+            <h4>
+                Erizo, un individuo cauteloso destaca por su astucia y serenidad. Siempre alerta y adaptándose a los
+                cambios, resuelve desafíos con habilidad. Sus defensas son notables y su independencia, admirable.
+                Aunque
+                parece reservado, disfruta del tiempo con sus seres queridos. Un ser enigmático y excepcional que
+                cautiva
+                con su encanto único.
+            </h4>
+            <img src="./src/eri.png" alt="">
+
+        </div>
+        <div class="box-ab">
+            <h4>
+                Buho, Este grupo de individuos se presenta como tranquilos y relajados, pero detrás de esa apariencia
+                serena, poseen una astucia notable y una sorprendente capacidad para anticipar lo que está por venir.
+                Siempre vigilantes y controladores, observan cuidadosamente todo lo que ocurre a su alrededor,
+                demostrando
+                un talento excepcional para leer las situaciones con precisión. Su habilidad para anticipar y adaptarse
+                los
+                hace ser seres verdaderamente enigmáticos y fascinantes.
+            </h4>
+            <img src="./src/owl-307390_1280.png" alt="">
+
+        </div>
+        <div class="box-ab">
+            <h4>
+                Perro lobo, Este ser muestra una personalidad que aparenta ser solitaria, pero en realidad, es un
+                protector
+                dedicado de su manada. Su lealtad, valentía e inteligencia lo hacen destacar, convirtiéndolo en alguien
+                excepcional. Siempre dispuesto a enfrentar desafíos, cautiva a quienes lo conocen con su profundo
+                compromiso
+                y misterioso encanto hacia los suyos.
+            </h4>
+            <img src="./src/silhouette-3322007_1280.png" alt="">
+
+        </div>
+
+        <div class="box-ab">
+            <h4>
+                Zorro, lleno de astucia y agilidad, destaca por su habilidad para resolver acertijos con
+                destreza.
+                Su espíritu juguetón lo lleva a encontrar diversión en cada desafío que enfrenta, demostrando una aguda
+                inteligencia para superar obstáculos. Aunque muestra cautela en ocasiones y puede ser algo temeroso, su
+                ingenio lo hace destacar en cualquier situación. Su encanto único y enigmático lo convierte en alguien
+                admirado por su sabiduría y capacidad para resolver misterios.
+            </h4>
+            <img src="./src/nov-3285161_1280.png" alt="">
+
+        </div>
+
+
+    </section>
+
+
+    <section class="contacto" id="contacto">
+
+
+        <div class="container-form">
+
+            <form id="form">
+                <div class="box">
+                    <input type="text" name="from_name" id="from_name" required>
+                    <label>Nombre Completo</label>
+                </div>
+
+                <div class="box">
+                    <input type="email" name="email_id" id="email_id" required="">
+                    <label>Email</label>
+                </div>
+
+                <div class="texto-box">
+                    <textarea name="" style="width:400px" placeholder="Escribe tu mensaje" name="message"
+                        id="message"></textarea>
+                </div>
+                <input type="submit" id="button" class="" value="Send Email">
+
+            </form>
+
+
+
+
+
+
+
+
+
+
+
+        </div>
+
+
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="scroll-to-top-btn">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+
+
+    <script src="js.js" defer></script>
+
+
+
+</body>
+
+
+</html>
