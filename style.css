@@ -419,10 +419,37 @@ body{
   font-size: 12px;
 }
 
-.boton-form{
- 
+.caja-btn-form{
   display: flex;
   justify-content: center;
   border: none;
-  width: 130px;
+  padding-top: 20px;
+}
+
+
+.boton-form{
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 600;
+  border-radius: 10px;
+ width: 85px;
+ height: 35px;
+  display: flex;
+  justify-content: center;
+  border: none;
+  box-shadow: 0 0 5px rgb(0,140,255),
+  0 0 25px rgb(0,140,255),
+  0 0 50px rgb(0,140,255),
+  0 0 100px rgb(0,140,255);
+  
+}
+
+.boton-form:hover{
+  font-size: 17px;
+  background-color: #ffffff;
+  box-shadow: 0 0 5px rgb(151, 201, 243),
+  0 0 35px rgb(190, 213, 233),
+  0 0 50px rgb(255, 255, 255),
+  0 0 100px rgb(0,140,255);
+  
 }
