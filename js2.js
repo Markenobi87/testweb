@@ -21,6 +21,7 @@ function obtenerPersonalidad(puntos) {
     }
 }
 
+
 // Función para mostrar los resultados en la página
 function mostrarResultados() {
     const totalPuntos = puntosPorRespuesta['pregunta1'] + puntosPorRespuesta['pregunta2'] + puntosPorRespuesta['pregunta3'] + puntosPorRespuesta['pregunta4'] + puntosPorRespuesta['pregunta5'] + puntosPorRespuesta['pregunta6'] + puntosPorRespuesta['pregunta7'] + puntosPorRespuesta['pregunta8'] + puntosPorRespuesta['pregunta9'] + puntosPorRespuesta['pregunta10'];

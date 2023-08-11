@@ -325,7 +325,7 @@ body{
   }
 }
 
-/* Para pantallas muy pequeñas, coloca la imagen debajo del texto */
+/* Para pantallas muy pequeñas, */
 @media screen and (max-width: 480px) {
   .box-ab {
     flex-direction: column;
@@ -370,15 +370,13 @@ body{
 }
 
 
-
-
 /* SECTION CONTACTO */
 
 .container-form{
   max-width: 600px;
   margin: 0 auto; /* Centrar el formulario horizontalmente */
   padding: 100px;
-  background-color:#0C1517;
+  background-color:#111f22;
   box-shadow: 0 15px 25px rgba(0,0,0,.6);
   border-radius: 10px;
   
